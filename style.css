@@ -1,0 +1,256 @@
+html {
+  scroll-behavior: smooth;
+  font-family: 'JetBrains Mono';
+
+}
+
+body {
+  margin: 0;
+  row-gap: 0px;
+  background-color: #212A3E;
+}
+
+#container__1 {
+  background: url(./assets/images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+  top: 0px;
+  height: 100vh;
+  display: grid;
+  padding-top: 0%;
+  padding-left: 10%;
+}
+
+.logo {
+  display: flex;
+  column-gap: 20px;
+  justify-content: left;
+  align-items: center;
+}
+
+.title__logo {
+  color: #FF8400;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.description>h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.description>p {
+  color: #fff;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.start__btn {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  padding: 0px;
+  height: 60px;
+}
+
+button {
+  background-color: #FF8400;
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-decoration: none;
+  font-weight: 900;
+  color: #070A52;
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+
+}
+
+button:hover {
+  transform: translate(-5px, -5px);
+  transition: ease-in 200ms;
+}
+
+#container__2 {
+  position: absolute;
+}
+
+.btn {
+  background-color: #394867;
+  width: 5em;
+  height: 2.5em;
+  border-radius: 3.3em;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, .1),
+    inset 0 8px 8px rgba(0, 0, 0, .1),
+    inset 0 -4px 4px rgba(0, 0, 0, .1);
+  position: -webkit-sticky;
+  top: 1%;
+
+  padding: 0 0.2em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn__indicator {
+  background-color: rgb(17, 17, 17);
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
+  transition: transform .3s ease;
+}
+
+.btn__icon-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .3s ease;
+}
+
+.btn__icon {
+  color: #FFB84C;
+
+}
+
+body.sunmode {
+  background-color: #fff;
+}
+
+.sunmode .btn__indicator {
+  transform: translateX(3em);
+  background-color: #fff;
+}
+
+.sunmode #where {
+  color: rgb(18, 18, 18);
+}
+
+.sunmode .btn {
+  background-color: #fff;
+}
+
+.courses {
+  display: grid;
+  position: relative;
+  left: 28%;
+  margin-bottom: 5%;
+}
+
+#where {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+  left: 38%;
+}
+
+.courses img {
+  width: 100%;
+}
+
+.web__development__AI {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #1D267D;
+  column-gap: 3%;
+  row-gap: 10%;
+  padding-bottom: 15%;
+}
+
+.web__development__AI>div {
+  display: grid;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  position: relative;
+  background-color: #146C94;
+  border: none;
+}
+
+.web__development__AI>div:hover {
+  box-shadow: 0 -6px 10px 5px rgba(33, 42, 62, 1);
+}
+
+#__title {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  grid-column: 1 / span 3;
+  color: #FF8400;
+  font-size: 40px;
+  font-weight: 900;
+  background-color: #537188;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  top: 50%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.description__ {
+  display: none;
+  position: absolute;
+  top: auto;
+  left: -100%;
+  z-index: 1;
+}
+
+.description__ span {
+  float: none;
+  display: block;
+}
+
+.dropdown:hover .description__ {
+  display: block;
+  width: 300%;
+  background-color: #D4ADFC;
+}
+
+.game {
+  text-align: center;
+}
+
+.game img {
+  width: 40%;
+}
+
+.game>div {
+  padding: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.game>div>div {
+  background-color: #146C94;
+  border: none;
+}
+
+.game>div>div:hover {
+  box-shadow: 0 -6px 10px 5px rgba(33, 42, 62, 1);
+}
+
+#courses__btn {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  left: 28%;
+  margin-bottom: 5%;
+}
